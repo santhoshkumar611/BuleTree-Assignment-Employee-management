@@ -10,28 +10,28 @@
     body {
             background-color: #0093E9;
 background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-/* Light background color for better contrast */
+
         }
         .container {
-            background-color: #ffffff; /* White background for the form */
-            padding: 30px; /* Padding around the form */
-            border-radius: 8px; /* Rounded corners */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-            margin-top: 50px; /* Margin at the top for spacing */
+            background-color: #ffffff; 
+            padding: 30px; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            margin-top: 50px; 
         }
         h1 {
-            color: #343a40; /* Dark color for the heading */
-            margin-bottom: 20px; /* Space below the heading */
+            color: #343a40; 
+            margin-bottom: 20px; 
         }
         .btn-primary {
-            background-color: #007bff; /* Bootstrap primary button color */
-            border: none; /* Remove border */
+            background-color: #007bff; 
+            border: none; 
         }
         .btn-primary:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+            background-color: #0056b3; 
         }
         .btn-secondary {
-            margin-left: 10px; /* Space between buttons */
+            margin-left: 10px;
         }
 </style>
 </head>

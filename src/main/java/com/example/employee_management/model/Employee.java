@@ -29,8 +29,6 @@ public class Employee {
     @Column(columnDefinition = "boolean default true")
     private Boolean status;
 
-    // Getters and Setters
-
     public Long getId() {
         return id;
     }
@@ -47,14 +45,14 @@ public class Employee {
         this.name = name;
     }
 
-	public String getEmail() {
-		return email;
-	}
+    public String getEmail() {
+        return email;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public LocalDate getDob() {
         return dob;
     }

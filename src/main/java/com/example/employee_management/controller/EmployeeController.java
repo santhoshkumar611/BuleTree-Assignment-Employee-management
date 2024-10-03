@@ -21,22 +21,22 @@ public class EmployeeController {
     @GetMapping
     public String listEmployees(Model model) {
         model.addAttribute("employees", employeeService.getAllEmployees());
-        return "employeeList"; // Ensure you have an employeeList.html template
+        return "employeeList";
     }
 
     @GetMapping("/add")
     public String addEmployeeForm(Model model) {
         model.addAttribute("employee", new Employee());
-        return "employeeForm"; // Ensure you have an employeeForm.html template
+        return "employeeForm";
     }
 
     @PostMapping("/add")
     public String addEmployee(@Valid @ModelAttribute("employee") Employee employee, BindingResult result) {
         if (result.hasErrors()) {
-            return "employeeForm"; // If there are errors, return to the form
+            return "employeeForm";
         }
         employeeService.saveEmployee(employee);
-        return "redirect:/employees"; // Redirect to the list of employees
+        return "redirect:/employees";
     }
 
     @GetMapping("/edit/{id}")
@@ -51,16 +51,16 @@ public class EmployeeController {
     public String updateEmployee(@PathVariable Long id, @Valid @ModelAttribute("employee") Employee employee,
             BindingResult result) {
         if (result.hasErrors()) {
-            return "editEmployeeForm"; // Return to the edit form if there are errors
+            return "editEmployeeForm";
         }
         employee.setId(id);
         employeeService.saveEmployee(employee);
-        return "redirect:/employees"; // Redirect to the list of employees after update
+        return "redirect:/employees";
     }
 
     @GetMapping("/delete/{id}")
     public String deleteEmployee(@PathVariable Long id) {
         employeeService.deleteEmployee(id);
-        return "redirect:/employees"; // Redirect to the list of employees after deletion
+        return "redirect:/employees";
     }
 }

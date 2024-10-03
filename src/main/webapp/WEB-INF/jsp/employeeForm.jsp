@@ -10,27 +10,27 @@
     <style>
         body {
             background-color: #0093E9;background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
- /* Light background color */
+ 
         }
         .container {
-            background-color: #ffffff; /* White background for the form */
-            padding: 40px; /* More padding for the form */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-            max-width: 600px; /* Limit the width of the form */
-            margin: auto; /* Center the form */
+            background-color: #ffffff; 
+            padding: 40px; 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+            max-width: 600px; 
+            margin: auto; 
         }
         h1 {
-            color: #343a40; /* Dark color for the heading */
-            text-align: center; /* Center the heading */
-            margin-bottom: 20px; /* Space below the heading */
+            color: #343a40; 
+            text-align: center; 
+            margin-bottom: 20px; 
         }
         .btn-success {
-            background-color: #28a745; /* Bootstrap success button color */
-            border: none; /* Remove border */
-        }
+            background-color: #28a745; 
+            border: none; 
+                }
         .btn-success:hover {
-            background-color: #218838; /* Darker green on hover */
+            background-color: #218838; 
         }
     </style>
 </head>
