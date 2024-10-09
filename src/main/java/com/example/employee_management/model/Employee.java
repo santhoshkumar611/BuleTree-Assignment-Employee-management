@@ -77,12 +77,4 @@ public class Employee {
         this.status = status;
     }
 
-    // Optionally, a method to calculate age
-    @Transient
-    public Integer getAge() {
-        if (this.dob != null) {
-            return LocalDate.now().getYear() - this.dob.getYear();
-        }
-        return null;
-    }
 }
